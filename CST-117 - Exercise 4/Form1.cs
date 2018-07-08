@@ -49,7 +49,6 @@ namespace CST_117___Exercise_4
                 {
                     //Defining Minute
                     int minute = seconds / 60;
-                    if (seconds >=1)
                     label2.Text = minute.ToString() + " minutes.";
                 }
                 //If > is used instead of < this whole statement will be missed and causes errors, careful watching the correct < or >
@@ -57,15 +56,13 @@ namespace CST_117___Exercise_4
                 {
                     //Define Hour
                     int hour = seconds / 3600;
-                    if (hour >=1)
-                    label2.Text = hour.ToString() + "hours.";
+                    label2.Text = hour.ToString() + " hours.";
 
                 }
                 else if (seconds >= 86400)
                 {
                     //Define Day
                     int day = seconds / 86400;
-                    if (day >=1)
                     label2.Text = day.ToString() + " days.";
                 }
             }
